@@ -8,7 +8,7 @@ class GroomsmenController < ApplicationController
   end
 
   def show
-    @Groomsman = Groomsman.find(params[:id])
+    @groomsman = Groomsman.find(params[:id])
   end
 
   def location
