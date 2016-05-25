@@ -1,0 +1,7 @@
+<% @groomsman.each do |groomsman| %>
+ <h2> <%=groomsman.name%> </h2>
+ <button class ="btn btn-default"> <%= link_to 'Go!', groomsman %></button> 
+
+  <br>
+  <br>
+  <% end %>

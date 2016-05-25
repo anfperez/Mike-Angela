@@ -21,11 +21,16 @@ bridesmaid_list.each do |name, bio, picture|
 end
 
 groomsman_list = [
-["Johan", "Paragon of Responsibility.  Being the oldest of Mikel's siblings, Johan has shouldered the burden of being the role model to the family and taught us all the importance of Duke Basketball.", ]
-["Brain", "Paragon of Healing.  Mikel's older brother has a mutant healing factor and has the X-Men tattoo to prove it.  His energy sessions have kept our family and friends all in good health.", ]
-["Casey", "Paragon of Loyalty.  Casey and Mikel met in the trenches of the Fordham University commuter lounge and have fought side by side ever since.  Except for Puzzle Fighter, which is a game that no longer exists.", ]
-["Rishi", "Paragon of Strength.  The original Enforcer and the successor to Mikel's presidency of the CSF Club, Rishi now uses his Hulk-like frame to beat down raw footage into concise video projects.",
-["Renzo", ]]
-
-
+["Johan", "Paragon of Responsibility.  Being the oldest of Mikel's siblings, Johan has shouldered the burden of being the role model to the family and taught us all the importance of Duke Basketball.", "http://i.imgur.com/OsBisS8.jpg"],
+["Brian", "Paragon of Healing.  Mikel's older brother has a mutant healing factor and has the X-Men tattoo to prove it.  His energy sessions have kept our family and friends all in good health.", "http://i.imgur.com/HFaj32f.jpg"],
+["Casey", "Paragon of Loyalty.  Casey and Mikel met in the trenches of the Fordham University commuter lounge and have fought side by side ever since.  Except for Puzzle Fighter, which is a game that no longer exists.", "http://i.imgur.com/jQ6jIds.jpg"],
+["Rishi", "Paragon of Strength.  The original Enforcer and the successor to Mikel's presidency of the CSF Club, Rishi now uses his Hulk-like frame to beat down raw footage into concise video projects.", "http://i.imgur.com/gWeK0rU.jpg"],
+["Renzo", "Paragon of Knowledge.  Renzo is a living library of pop culture knowledge, and shares his collected expertise through his panels at comic conventions so that future generations of geeks will get to experience David Lynch Signature Coffee ads.", "http://i.imgur.com/I8eNAAr.jpg"],
+["Anthony", "Paragon of Energy.  Most people would consider following up a 60+ hour work week with a late night warehouse rave as madness.  Anthony considers that a pre-game to his One Piece viewing.", "http://i.imgur.com/eejMcli.jpg"],
+["Shane", "Paragon of Creation.  Shane with his magnificent Poof of hair can be often found breathing life into his art projects, whether they be simple munny dolls to full body cosplay armor.", "http://i.imgur.com/ovRj1jj.jpg"],
+["Gino", "Paragon of Hospitality.  It is no surprise that Gino is always looking out for the needs of others.  This is best illustrated by his care for two adopted cats, Cider and Bella, as well as his care for two stray neighborhood cats, Mikel and Angela.", "http://i.imgur.com/UYhHetb.jpg"]
 ]
+
+groomsman_list.each do |name, bio, picture|
+  Groomsman.create(name: name, bio: bio, picture: picture)
+end

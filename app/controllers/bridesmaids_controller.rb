@@ -1,6 +1,6 @@
 class BridesmaidsController < ApplicationController
   def index
-    
+    @bridesmaids = Bridesmaid.all
     
   end
 
